@@ -1,10 +1,12 @@
 public class Word
 {
     public bool IsHidden;
+    public string wordtxt;
 
-    public Word()
+    public Word(string wordtext)
     {
         IsHidden = false;
+        wordtext = wordtxt;
     }
 
     public void Hide()
