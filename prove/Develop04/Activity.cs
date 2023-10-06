@@ -1,3 +1,5 @@
+using System.Xml.Serialization;
+
 public class Activity
 {
     protected string _name;
@@ -17,6 +19,7 @@ public class Activity
         Thread.Sleep(300);
         Console.WriteLine("The activity will start soon.");
         ShowCountdown(5, 1000);
+        Console.Write("\n");
     }
 
     public void EndingMessage()
@@ -36,5 +39,11 @@ public class Activity
             Thread.Sleep(space);
             Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
         }
+    }
+
+    public void Delay(int seconds)
+    {
+
+        Thread.Sleep(seconds * 1000);
     }
 }
