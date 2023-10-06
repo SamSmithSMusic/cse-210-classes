@@ -4,7 +4,7 @@ using Microsoft.VisualBasic;
 public class Logger
 {
     //PATH TO STORAGE DOCUMENT
-    string documentPath = @"C:\Users\samsm\OneDrive - BYU-Idaho\School\PC Coding\cse-210-classes\prove\Develop03\Documents.txt";
+    string documentPath = @"Documents.txt";
     private List<List<string>> entrylist = new List<List<string>>();
     private List<string> entry = new List<string>(); 
     private string[] temparray;
