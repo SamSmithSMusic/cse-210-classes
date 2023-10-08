@@ -32,7 +32,7 @@ public class Breathing : Activity
             Console.WriteLine("Exhale");
             ShowCountdown(5, 1500);
             Console.WriteLine("Hold");
-            ShowCountdown(5,1500);
+            ShowCountdown(5,1000);
         }
 
         EndingMessage();

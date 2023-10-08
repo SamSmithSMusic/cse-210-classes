@@ -5,12 +5,14 @@ class Program
     static void Main(string[] args)
     {
             Breathing breathing = new Breathing("Breathing to Relaxation","In this activity you'll be walked through deep breaths and should feel a sense of calm towards the end and throughout the activity.","2 Minutes");
-            Reflection reflection = new Reflection("Reflection in Time","In this activity you will be prompted with two questions. After answering the initial prompt, a follow up question will also be displayed. After you answer that question the activity will end.","3 Minutes");
+            Reflection reflection = new Reflection("Reflection in Time","This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.","3 Minutes");
             Listing listing = new Listing("Breadth Notation","In this activity you will be prompting with a question and are encouraged to respond with as many answers as you can. Press enter after each answer and enter \"Done\" when you've completed your answer list.","2 Minutes");
 
             bool playing = true;
             while (playing)
             {
+                Console.Clear();
+
                 Console.WriteLine("What would you like to do?");
                 Console.Write(@"
 1 : Breathing Activity
@@ -28,7 +30,7 @@ Enter the corresponding number : ");
                         break;
                         
                         case 2:
-
+                            reflection.Run();
                         break;
                         
                         case 3:
@@ -36,7 +38,7 @@ Enter the corresponding number : ");
                         break;
                         
                         case 4:
-
+                            playing = false;
                         break;
                         ;
                     }

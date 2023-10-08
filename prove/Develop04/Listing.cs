@@ -5,7 +5,7 @@ public class Listing : Activity
 
     public Listing(string name, string desc, string duration) : base(name,desc,duration)
     {
-
+        
     }
     public void Run()
     {
