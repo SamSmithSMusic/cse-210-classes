@@ -13,10 +13,12 @@ public class Activity
         _duration = duration;
     }
 
+    
     public void StartingMessage()
     {
+        //make window full screen maybe? if GUI isn't added
         Console.WriteLine($"Welcome to {_name}:\n{_description}\nThis activity should take {_duration} to complete.");
-        Delay(300);
+        Delay(1);
         Console.WriteLine("The activity will start soon.");
         ShowCountdown(10, 1500);
         Console.Clear();

@@ -39,7 +39,7 @@ public class Reflection : Activity
 
     private void LogEntry(List<string> response,string tempRef)
     {
-        logString = string.Join(" Response: ", _response);
+        logString = string.Join(" Reflection: ", _response);
 
         using (StreamWriter writer = new StreamWriter(tempRef, true))
         {

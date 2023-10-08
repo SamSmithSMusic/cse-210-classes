@@ -7,7 +7,7 @@ public class Breathing : Activity
 
     public void Run()
     {
-        //make window full screen maybe?
+        
 
         StartingMessage();
         Console.WriteLine("We are going to take six breaths.");

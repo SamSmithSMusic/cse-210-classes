@@ -34,7 +34,7 @@ Enter the corresponding number : ");
                         break;
                         
                         case 3:
-
+                            listing.Run();
                         break;
                         
                         case 4:
