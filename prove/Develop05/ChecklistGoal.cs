@@ -39,7 +39,7 @@ public class ChecklistGoal : Goal
 
     public override string GetStringRep()
     {
-        return $"{_shortName},{_description},{_points},{_bonus},{_target},{_amountCompleted},{IsComplete()}";
+        return $"{_shortName};{_description};{_points};{_bonus};{_target};{_amountCompleted};{IsComplete()}";
     }
 
     public string GetAmountCompleted()

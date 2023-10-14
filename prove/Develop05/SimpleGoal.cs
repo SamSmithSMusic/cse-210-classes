@@ -20,6 +20,6 @@ public class SimpleGoal : Goal
 
     public override string GetStringRep()
     {
-        return $"{_shortName},{_description},{_points},{IsComplete()}";
+        return $"{_shortName};{_description};{_points};{IsComplete()}";
     }
 }

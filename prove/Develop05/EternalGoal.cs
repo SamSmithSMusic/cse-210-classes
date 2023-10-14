@@ -14,7 +14,7 @@ public class EternalGoal : Goal
 
     public override string GetStringRep()
     {
-        return $"{_shortName},{_description},{_points}";
+        return $"{_shortName};{_description};{_points}";
     }
 
     public override bool IsComplete()

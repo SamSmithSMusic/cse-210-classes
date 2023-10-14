@@ -216,7 +216,7 @@ public class GoalManager
                 while (!reader.EndOfStream)
                 {
                     string line = reader.ReadLine();
-                    string[] parts = line.Split(',');
+                    string[] parts = line.Split(';');
                     //points
                     if (parts.Length == 1)
                     {
