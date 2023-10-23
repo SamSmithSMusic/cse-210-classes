@@ -12,7 +12,7 @@ public class Calendar
             Console.WriteLine("- Calendar Menu -");
             Console.WriteLine("1 : View Daily Calendar");
             Console.WriteLine("2 : View Weekly Calendar");
-            Console.WriteLine("3 : Viwe Monthly Calendar");
+            Console.WriteLine("3 : View Monthly Calendar");
             Console.WriteLine("4 : Return to Main Menu");
             string whack = Console.ReadLine();
 
