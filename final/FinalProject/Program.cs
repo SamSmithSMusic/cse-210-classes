@@ -6,8 +6,8 @@ class Program
     {
         bool running = true;
         UserManager userM = new UserManager();
-        TaskManager taskM = new TaskManager();
-        Calendar calendar = new Calendar();
+        TaskManager taskM = new TaskManager(userM);
+        Calendar calendar = new Calendar(taskM);
         while (running)
         {
             Console.WriteLine("- Main Menu -");

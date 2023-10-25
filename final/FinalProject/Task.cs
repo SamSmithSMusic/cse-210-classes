@@ -1,14 +1,14 @@
 public abstract class Task
 {
-    private string _stringRep;
-    private string _title;
-    private string _description;
-    private int _dueDate;
-    private int _priority;
-    private bool _isComplete;
-    private int _frequency;
+    protected string _stringRep;
+    protected string _title;
+    protected string _description;
+    protected DateTime _dueDate;
+    protected int _priority;
+    protected bool _isComplete;
+    protected int _frequency;
 
-    public Task(string name, string desc, int due, int priority, bool complete, int frequency)
+    public Task(string name, string desc, DateTime due, int priority, bool complete, int frequency)
     {
         _title = name;
         _description = desc;
@@ -29,7 +29,30 @@ public abstract class Task
     {
         return _frequency;
     }
+    public DateTime GetDue()
+    {
+        return _dueDate;
+    }
+    public string GetPriority()
+    {
+        if (_priority == 1)
+        {
+            return "Low";
+        }
+        else if (_priority == 2)
+        {
+            return "Medium";
+        }
+        else if (_priority == 3)
+        {
+            return "High";
+        }
+        else
+        {
+            return "Error in priority return";
+        }
+    }
     public abstract void RecordEvent();
-    public abstract void IsComplete();
+    public abstract bool IsComplete();
     public abstract string GetStringRep();
 }

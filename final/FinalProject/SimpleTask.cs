@@ -1,19 +1,19 @@
 public class SimpleTask : Task
 {
-    public SimpleTask(string title, string desc, int due, int priority, bool complete, int frequency) : base(title, desc, due, priority, complete, frequency)
+    public SimpleTask(string title, string desc, DateTime due, int priority, bool complete, int frequency) : base(title, desc, due, priority, complete, frequency)
     {
 
     }
     public override void RecordEvent()
     {
-
+        _isComplete = true;
     }
-    public override void IsComplete()
+    public override bool IsComplete()
     {
-        throw new NotImplementedException();
+        return _isComplete;
     }
     public override string GetStringRep()
     {
-        throw new NotImplementedException();
+        return  $"{_title};{_description};{_dueDate};{_priority};{_isComplete};{_frequency}";
     }
 }
